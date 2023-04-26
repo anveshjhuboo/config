@@ -2,6 +2,12 @@
 " Neovim Configuration File
 " Anvesh G. Jhuboo
 " PATH: ~/.config/nvim/init.vim
+"
+" Install Neovim Plugin manager:
+"   curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs \
+"   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+"
+" Open Neovim and run: :UpdatePlugins
 " =======================
 
 " Set up Vim Plug (plugin manager)

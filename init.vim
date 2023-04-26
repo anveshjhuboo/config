@@ -10,6 +10,10 @@
 " Open Neovim and run: :UpdatePlugins
 " =======================
 
+" Set leader to space
+let mapleader = "\<Space>"
+
+
 " Set up Vim Plug (plugin manager)
 call plug#begin(stdpath('data') . '/plugged')
 

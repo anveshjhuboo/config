@@ -2,9 +2,8 @@
 # Enhanced with starship (https://starship.rs/) - Added at the end of the file
 # Anvesh G. Jhuboo
 
-# Load zsh-autosuggestions, zsh-syntax-highlighting and git plugins
-source /usr/share/zsh-autosuggestions
-source /usr/share/zsh-syntax-highlighting
+# Use zsh-autosuggestions, zsh-syntax-highlighting 
+# [apt|dnf] install zsh zsh-autosuggestion zsh-syntax-highlighting
 
 # Change the default theme
 # ZSH_THEME="agnoster"

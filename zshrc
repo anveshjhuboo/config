@@ -10,7 +10,7 @@
 unsetopt beep nomatch
 
 # Customize the prompt
-PROMPT='%{%F{green}%}[%n@%m%{%F{yellow}%} %~]$(git_prompt_info)%{%f%}%(!.%{%F{red}%}.%{%F{green}%})%# %{%f%}'
+# PROMPT='%{%F{green}%}[%n@%m%{%F{yellow}%} %~]$(git_prompt_info)%{%f%}%(!.%{%F{red}%}.%{%F{green}%})%# %{%f%}'
 
 # Set your default editor
 alias vim=nvim
@@ -34,12 +34,12 @@ setopt HIST_IGNORE_SPACE
 setopt HIST_SAVE_NO_DUPS
 
 # Case insensitive tab completion
-zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'm:{a-zA-Z}={A-Za-z} r:|=* l:|=*'
+# zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'm:{a-zA-Z}={A-Za-z} r:|=* l:|=*'
 
 # Autocomplete improvements
-setopt COMPLETE_IN_WORD
-setopt AUTO_MENU
-unsetopt MENU_COMPLETE
+# setopt COMPLETE_IN_WORD
+# setopt AUTO_MENU
+# unsetopt MENU_COMPLETE
 setopt NO_LIST_BEEP
 setopt AUTO_CD
 setopt AUTO_PUSHD

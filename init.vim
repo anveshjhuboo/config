@@ -133,7 +133,6 @@ nnoremap <leader>w :w<CR> " Save current file
 nnoremap <leader>q :q<CR> " Close current window
 nnoremap <leader>Q :qa<CR> " Close all windows and quit
 nnoremap <leader>x :x<CR> " Save and close current window
-nnoremap <leader>X :xa<CR> " Save and close all windows
 nnoremap <leader>d :bd<CR> " Delete current buffer
 nnoremap <leader>h :noh<CR> " Clear search highlight
 nnoremap <leader>ev :vsplit $MYVIMRC<CR> " Open Neovim configuration

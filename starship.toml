@@ -54,7 +54,6 @@ truncation_symbol = "…"
 
 [git_commit]
 disabled = false
-symbol = " "
 tag_symbol = " "
 style = 'bold dimmed green'
 format = '[\($hash\)]($style) '
@@ -67,7 +66,6 @@ format = '[\($added\)]($added_style) [\($deleted\)]($deleted_style) '
 
 [git_status]
 disabled = false
-symbol = " "
 ahead = "⇡${count}"
 behind = "⇣${count}"
 diverged = "⇕⇣${ahead_count}⇡${behind_count}"
@@ -82,7 +80,7 @@ style = 'bold red'
 rebase = "REBASING"
 merge = "MERGING"
 revert = "REVERTING"
-cherry-pick = "CHERRY-PICKING"
+cherry_pick = "CHERRY-PICKING"
 bisect = "BISECTING"
 am = "AM"
 am_or_rebase = "AM/REBASE"
@@ -92,9 +90,6 @@ format = '[\($state( $progress_current of $progress_total)\)]($style) '
 ###############################################################
 # Language Configuration
 ###############################################################
-
-[C]
-format = "via [$name $version]($style) "
 
 [conda]
 format = "via [$symbol$environment]($style) "

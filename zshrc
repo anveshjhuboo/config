@@ -93,3 +93,7 @@ source "$HOME/.profile"
 ##################################################
 eval "$(starship init zsh)"
 
+# Start Tmux when staring zsh
+if [ -z "$TMUX" ]; then
+  tmux attach -t default || tmux new -s default
+fi

@@ -85,6 +85,9 @@ alias gtag="git tag"
 # Initialize .profile
 source "$HOME/.profile"
 
+# Homebrew (MacOS Silicon)
+# eval "$(/opt/homebrew/bin/brew shellenv)"
+
 ##################################################
 # Startship (https://starship.rs/)
 ##################################################

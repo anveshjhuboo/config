@@ -1,0 +1,141 @@
+# ~/.config/starship.toml
+
+###############################################################
+# Starship Configuration (https://starship.rs)
+# Author: Anvesh G. Jhuboo
+###############################################################
+
+"$schema" = 'https://starship.rs/config-schema.json'
+add_newline = true
+
+[character]
+success_symbol = '[➜](bold green)'
+
+[cmd_duration]
+min_time = 10_000 # Show when cmd takes longer than 10 seconds
+show_milliseconds = false
+format = " took [$duration](bold yellow)ms "
+
+[directory]
+truncation_length = 3
+truncate_to_repo = true
+format = '[$path]($style)[$read_only]($read_only_style)[$lock]($lock_style) '
+
+[jobs]
+symbol = " "
+threshold = 1
+format = '[$symbol$number]($style) '
+
+[memory_usage]
+threshold = -1
+symbol = " "
+style = 'bold dimmed green'
+disabled = false
+
+[package]
+symbol = "via [$symbol $version]($style) "
+display_private = true
+disabled = false
+
+[time]
+disabled = false
+format = '🕙[\[ $time \]]($style) '
+time_format = '%R'
+utc_time_offset = '-5'
+
+###############################################################
+# Git Configuration
+###############################################################
+
+[git_branch]
+symbol = " "
+truncation_length = 4
+truncation_symbol = "…"
+
+[git_commit]
+disabled = false
+symbol = " "
+tag_symbol = " "
+style = 'bold dimmed green'
+format = '[\($hash\)]($style) '
+commit_hash_length = 7
+
+[git_metrics]
+added_style = 'bold green'
+deleted_style = 'bold red'
+format = '[\($added\)]($added_style) [\($deleted\)]($deleted_style) '
+
+[git_status]
+disabled = false
+symbol = " "
+ahead = "⇡${count}"
+behind = "⇣${count}"
+diverged = "⇕⇣${ahead_count}⇡${behind_count}"
+conflicted = "="
+staged = "+"
+untracked = "?"
+renamed = "»"
+deleted = "✘"
+style = 'bold red'
+
+[git_state]
+rebase = "REBASING"
+merge = "MERGING"
+revert = "REVERTING"
+cherry-pick = "CHERRY-PICKING"
+bisect = "BISECTING"
+am = "AM"
+am_or_rebase = "AM/REBASE"
+style = 'bold yellow'
+format = '[\($state( $progress_current of $progress_total)\)]($style) '
+
+###############################################################
+# Language Configuration
+###############################################################
+
+[C]
+format = "via [$name $version]($style) "
+
+[conda]
+format = "via [$symbol$environment]($style) "
+
+[docker_context]
+format = "via [$symbol$context]($style) "
+symbol = "🐳 "
+
+[dotnet]
+format = "[$symbol($version)(🎯 $tfm)]($style) "
+heuristic = true
+symbol = "•NET "
+
+[golang]
+format = "via [$symbol$version]($style) "
+symbol = "🐹 "
+
+[helm]
+format = "via [$symbol$version]($style) "
+
+[kubernetes]
+format = "on [⛵ ($user on )($cluster in )$context ($namespace)](dimmed green) "
+style = "dimmed green"
+disabled = false
+
+[lua]
+format = "via [$symbol$version]($style) "
+
+[nodejs]
+format = "via [$symbol$version]($style) "
+symbol = "⬢ "
+
+[python]
+format = "via [$symbol$version]($style) "
+symbol = "🐍 "
+
+[rust]
+format = "via [$symbol$version]($style) "
+symbol = "🦀 "
+
+[terraform]
+format = "via [$symbol$version]($style) "
+symbol = "💠 "
+

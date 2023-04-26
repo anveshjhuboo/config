@@ -26,3 +26,6 @@ curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubuserc
 
 # Install VSCode
 # Import agj.code-porfile into Files/Preferences/Porfiles/Import Porfile
+
+# To add to PATH when downloading from source or using tar
+# foc@ubuntu22:~$ sudo cp -r node-v18.12.1-linux-x64/{bin,include,lib,share}  /usr/

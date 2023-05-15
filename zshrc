@@ -85,15 +85,11 @@ alias gtag="git tag"
 # Initialize .profile
 source "$HOME/.profile"
 
-# Homebrew (MacOS Silicon)
-# eval "$(/opt/homebrew/bin/brew shellenv)"
+# Launch Obsidian.md
+alias md="cd $HOME/Desktop && ./Obsidian-1.2.8.AppImage"
 
 ##################################################
 # Startship (https://starship.rs/)
 ##################################################
 eval "$(starship init zsh)"
 
-# Start Tmux when staring zsh
-if [ -z "$TMUX" ]; then
-  tmux attach -t default || tmux new -s default
-fi

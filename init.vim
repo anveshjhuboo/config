@@ -1,7 +1,13 @@
 " =======================
 " Neovim Configuration File
-" Anvesh G. Jhuboo
+" Author: Anvesh G. Jhuboo
+" =======================
+" This file should be placed at:
 " PATH: ~/.config/nvim/init.vim
+"
+" =======================
+" Neovim User Documentation: https://neovim.io/doc/user/
+" Neovim Plugins: https://neovimcraft.com
 "
 " Install Neovim Plugin manager:
 "   curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs \
